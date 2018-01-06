@@ -92,7 +92,8 @@ colnames(NEIsummary)[colnames(NEIsummary) == 'NEISCCsubset$type'] <- 'Sample_Sou
 
 ## Run and display the Plot ##
 ggplot(data=NEIsummary, aes(y=NEIsummary$SPM2.5, x=NEIsummary$`NEISCCsubset$year`, color = Sample_Source)) + 
-    geom_line() +
+    geom_line(size=1.5) +
+    geom_point(size=3) +
     xlab("Years") + ylab("Total PM2.5 Emissions") +
     ggtitle("United States Total Coal Combustion-Related Emissions")
 
@@ -100,7 +101,8 @@ ggplot(data=NEIsummary, aes(y=NEIsummary$SPM2.5, x=NEIsummary$`NEISCCsubset$year
 ## Print the plot to a file
 png(filename = "plot4.png", width = 480, height = 480)
 ggplot(data=NEIsummary, aes(y=NEIsummary$SPM2.5, x=NEIsummary$`NEISCCsubset$year`, color = Sample_Source)) + 
-    geom_line() +
+    geom_line(size=1.5) +
+    geom_point(size=3) +
     xlab("Years") + ylab("Total PM2.5 Emissions") +
     ggtitle("United States Total Coal Combustion-Related Emissions")
 dev.off()
