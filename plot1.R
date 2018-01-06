@@ -79,17 +79,12 @@ NEIsummary <- summarize(NEIgroups, count = n(), SPM2.5 = sum(Emissions, na.rm = 
 
 ## Run and display the Plot ##
 ## 1st Plot Volume ##
-ggplot(data=NEIsummary, aes(x=NEIsummary$`NEI$year`, y=NEIsummary$SPM2.5)) + 
-    geom_bar(colour="black", fill="#DD8888", width=.8, stat="identity") +
-    xlab("Year") + ylab("Total PM2.5 Emissions") +
-    ggtitle("United States PM2.5 Total Emissions")+
-    geom_smooth(method = "lm", se=FALSE, color="black", aes(group=1))
+barplot(height=NEIsummary$SPM2.5, names.arg=NEIsummary$`NEI$year`, xlab="Years", ylab=expression('Total PM2.5 Emissions'),
+        main=expression('United States PM2.5 Total Emissions'), col = "red")
+
 
 ## Print the file
 png(filename = "plot1.png", width = 480, height = 480)
-ggplot(data=NEIsummary, aes(x=NEIsummary$`NEI$year`, y=NEIsummary$SPM2.5)) + 
-    geom_bar(colour="black", fill="#DD8888", width=.8, stat="identity") +
-    xlab("Year") + ylab("Total PM2.5 Emissions") +
-    ggtitle("United States PM2.5 Total Emissions")+
-    geom_smooth(method = "lm", se=FALSE, color="black", aes(group=1))
+barplot(height=NEIsummary$SPM2.5, names.arg=NEIsummary$`NEI$year`, xlab="Years", ylab=expression('Total PM2.5 Emissions'),
+        main=expression('United States PM2.5 Total Emissions'), col = "red")
 dev.off()
