@@ -25,7 +25,7 @@ setwd("~/Documents/Data Science/Exploratory Data Analysis/Week 4/Data")
 ######################
 ##  LOAD LIBRARY    ##
 ######################
-library(ggplot2)
+## library(ggplot2) - using base plotting functions only
 library(dplyr)
 
 ##############################
