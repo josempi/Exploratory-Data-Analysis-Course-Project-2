@@ -55,7 +55,7 @@ SCC <- readRDS("Source_Classification_Code.rds")
 ## Clean up Table - Delete all NA rows ##
 ## NEI table does not contain NA values
 
-## Subset the data for Yeat 1999, 2002, 2005, 2008 ##
+## Subset the data for Years 1999, 2002, 2005, 2008 ##
 ## Not needed, data is already specific to the above listed years
 
 ######################################
