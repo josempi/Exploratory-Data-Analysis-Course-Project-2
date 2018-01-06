@@ -1,6 +1,6 @@
 ######################################################################################################
 ##                                                                                                  ##
-## This is the Exploratory Data Analysis Assignment1 R script                                       ##
+## This is the Exploratory Data Analysis R script for Course Project 2                              ##
 ## Title: Plot 1                                                                                    ##
 ## Week 4                                                                                           ##
 ##                                                                                                  ##
