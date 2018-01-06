@@ -78,7 +78,7 @@ NEIgroups <- group_by(NEIBaltimore, NEIBaltimore$year, NEIBaltimore$type)
 ## Summarize the Data with the mean Emissions for each year ##
 NEIsummary <- summarize(NEIgroups, count = n(), SPM2.5 = sum(Emissions, na.rm = T))
 
-## Rename a the "type" column to a cleaner name
+## Rename the "type" column to a cleaner name
 colnames(NEIsummary)[colnames(NEIsummary) == 'NEIBaltimore$type'] <- 'Sample_Source'
 
 ##############################
