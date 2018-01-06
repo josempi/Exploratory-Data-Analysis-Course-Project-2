@@ -10,6 +10,7 @@
 ## File source: EPA National Emissions Inventory                                                    ##
 ## Link: https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip                         ##
 ## Environment: RStudio 1.0.153, R version 3.4.3                                                    ##
+## Question: Have total emissions from PM2.5 decreased in the United States from 1999 to 2008?      ##
 ##                                                                                                  ##
 ######################################################################################################
 
