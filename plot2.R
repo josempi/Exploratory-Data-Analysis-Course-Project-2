@@ -1,6 +1,6 @@
 ######################################################################################################
 ##                                                                                                  ##
-## This is the Exploratory Data Analysis Assignment1 R script                                       ##
+## This is the Exploratory Data Analysis R script for Course Project 2                              ##
 ## Title: Plot 2                                                                                    ##
 ## Week 4                                                                                           ##
 ##                                                                                                  ##
@@ -11,7 +11,7 @@
 ## Link: https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip                         ##
 ## Environment: RStudio 1.0.153, R version 3.4.3                                                    ##
 ## Question: Have total emissions from PM2.5 decreased in the Baltimore City, Maryland              ##
-##           (fips == "24510") from 1999 to 2008?                                                    ##
+##           (fips == "24510") from 1999 to 2008?                                                   ##
 ##                                                                                                  ##
 ######################################################################################################
 
