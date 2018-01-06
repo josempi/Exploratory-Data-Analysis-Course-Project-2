@@ -57,6 +57,9 @@ SCC <- readRDS("Source_Classification_Code.rds")
 ## NEI table does not contain NA values
 
 ## Subset the data for fips == 24510 (City of Baltimore, Maryland) and type == ON-ROAD
+## Per the National Emissions Inventory (NEI) website, most motor vehicle emissions may be measured 
+## via the "ON-RAOD" variable
+## Ref: https://www.epa.gov/air-emissions-inventories/national-emissions-inventory-nei
 NEIBaltimore <- subset(NEI, fips=="24510" & type == "ON-ROAD")
 
 
