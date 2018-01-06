@@ -78,12 +78,11 @@ NEIsummary <- summarize(NEIgroups, count = n(), SPM2.5 = sum(Emissions, na.rm = 
 ##############################
 
 ## Run and display the Plot ##
-## 1st Plot Volume ##
 barplot(height=NEIsummary$SPM2.5, names.arg=NEIsummary$`NEI$year`, xlab="Years", ylab=expression('Total PM2.5 Emissions'),
         main=expression('United States PM2.5 Total Emissions'), col = "red")
 
 
-## Print the file
+## Print the plot to a file
 png(filename = "plot1.png", width = 480, height = 480)
 barplot(height=NEIsummary$SPM2.5, names.arg=NEIsummary$`NEI$year`, xlab="Years", ylab=expression('Total PM2.5 Emissions'),
         main=expression('United States PM2.5 Total Emissions'), col = "red")
