@@ -10,8 +10,9 @@
 ## File source: EPA National Emissions Inventory                                                    ##
 ## Link: https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip                         ##
 ## Environment: RStudio 1.0.153, R version 3.4.3                                                    ##
-## Question: How have emissions from motor vehicles sources chnaged from 1999-2008 in Baltimore     ##
-##           City and Los Angeles?                                                                  ##
+## Question: Compare emissions from motor vehicles sources in Baltimore City with emissions from    ##
+##           motor vehicle sources in Los Angeles County. Which city has seen greater changes       ##
+##           over time in motor vehicle emissions?                                                  ##
 ##                                                                                                  ##
 ######################################################################################################
 
@@ -64,7 +65,7 @@ SCC <- readRDS("Source_Classification_Code.rds")
 ## Subset for City of Baltimore and Los Angeles
 NEIsubset <- subset(NEI, fips=="24510" | fips == "06037")
 
-## Subset for ON-ROAD
+## Subset for type == ON-ROAD for motor vehicle emissions
 NEIsubset <- subset(NEIsubset, type == "ON-ROAD")
 
 ## Sort the Data by Year and FIPS
