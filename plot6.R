@@ -98,13 +98,13 @@ ggplot(data=NEIsummary, aes(x=NEIsummary$`NEIsubset$year`, y=NEIsummary$SPM2.5, 
     geom_line(size=1.5) +
     geom_point(size=3) +
     xlab("Years") + ylab("Total PM2.5 Emissions") +
-    ggtitle("Baltimore City (fips 24510) and Los Angeles (fips 06037), PM2.5 Total Vehicle Emissions")
+    ggtitle("Baltimore City (fips 24510) and Los Angeles (fips 06037),\nPM2.5 Total Vehicle Emissions")
 
 ## Print the plot to a file
-png(filename = "plot6.png", width = 600, height = 480)
+png(filename = "plot6.png", width = 480, height = 480)
 ggplot(data=NEIsummary, aes(x=NEIsummary$`NEIsubset$year`, y=NEIsummary$SPM2.5, color = fips_Location_Code)) + 
     geom_line(size=1.5) +
     geom_point(size=3) +
     xlab("Years") + ylab("Total PM2.5 Emissions") +
-    ggtitle("Baltimore City (fips 24510) and Los Angeles (fips 06037), PM2.5 Total Vehicle Emissions")
+    ggtitle("Baltimore City (fips 24510) and Los Angeles (fips 06037),\nPM2.5 Total Vehicle Emissions")
 dev.off()
