@@ -11,7 +11,7 @@
 ## Link: https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip                         ##
 ## Environment: RStudio 1.0.153, R version 3.4.3                                                    ##
 ## Question: How have emissions from motor vehicles sources chnaged from 1999-2008 in Baltimore     ##
-##           City?                                                                                  ##
+##           City and Los Angeles?                                                                  ##
 ##                                                                                                  ##
 ######################################################################################################
 
