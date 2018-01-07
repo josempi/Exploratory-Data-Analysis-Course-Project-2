@@ -81,11 +81,11 @@ NEIsummary <- summarize(NEIgroups, count = n(), SPM2.5 = sum(Emissions, na.rm = 
 
 ## Run and display the Plot ##
 barplot(height=NEIsummary$SPM2.5, names.arg=NEIsummary$`NEIBaltimore$year`, xlab="Years", ylab=expression('Total PM2.5 Emissions'),
-        main=expression('City of Baltimore, Maryland, PM2.5 Total Emissions'), col = "red")
+        main=expression('Baltimore City, Maryland, PM2.5 Total Emissions'), col = "red")
 
 
 ## Print the plot to a file
 png(filename = "plot2.png", width = 480, height = 480)
 barplot(height=NEIsummary$SPM2.5, names.arg=NEIsummary$`NEIBaltimore$year`, xlab="Years", ylab=expression('Total PM2.5 Emissions'),
-        main=expression('City of Baltimore, Maryland, PM2.5 Total Emissions'), col = "red")
+        main=expression('Baltimore City, Maryland, PM2.5 Total Emissions'), col = "red")
 dev.off()
