@@ -89,13 +89,13 @@ colnames(NEIsummary)[colnames(NEIsummary) == 'NEIBaltimore$type'] <- 'Sample_Sou
 ggplot(data=NEIsummary, aes(x=NEIsummary$`NEIBaltimore$year`, y=NEIsummary$SPM2.5, color = Sample_Source)) + 
     geom_line() +
     xlab("Years") + ylab("Total PM2.5 Emissions") +
-    ggtitle("City of Baltimore, Maryland, PM2.5 Total Emissions")
+    ggtitle("Baltimore City, Maryland, PM2.5 Total Emissions")
 
 ## Print the plot to a file
 png(filename = "plot3.png", width = 480, height = 480)
 ggplot(data=NEIsummary, aes(x=NEIsummary$`NEIBaltimore$year`, y=NEIsummary$SPM2.5, color = Sample_Source)) + 
     geom_line() +
     xlab("Years") + ylab("Total PM2.5 Emissions") +
-    ggtitle("City of Baltimore, Maryland, PM2.5 Total Emissions")
+    ggtitle("Baltimore City, Maryland, PM2.5 Total Emissions")
 
 dev.off()
